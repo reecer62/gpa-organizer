@@ -5,33 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GPA Organizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/sanitize.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <!-- Main content -->
     <main class="main">
-        <!-- First semester default -->
-        <article class="semester">
-            <h1 class="semester-title">Semester Overview</h1>
-            <p contenteditable="true" class="semester-name">Fall 2019</p>
-            <!-- Courses section -->
-            <section class="courses">
-                <div class="courses-top-wrapper">
+        <!-- Container for semesters -->
+        <div class="semesters-container">
+
+            <!-- First semester default -->
+            <article class="semester">
+                <h1 class="semester-title">Semester Overview</h1>
+                <p contenteditable="true" class="semester-name">Fall 2019</p>
+                <!-- Courses section -->
+                <section class="courses">
                     <h2 class="courses-title">Courses</h2>
-                    <button type="button" class="btn-add-course">Add</button>  
-                </div>
-                <!-- Course default -->
-                <section class="course">
-                    <div class="course-top-wrapper">
-                        <button class="btn-del-course">Delete</button>
-                        <h3 class="course-title">CS101</h3>
-                        <p class="grade-letter">A</p>
-                        <p class="credits">3</p>
+                    <!-- Course default -->
+                    <section class="course">
+                        <button class="btn btn-del-course"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        <div class="course-top-wrapper">
+                            <p class="course-title">CS101</p>
+                            <p class="course-score">Score: <span class="score">A</span></p>
+                            <p class="course-credits">Credits: <span class="credits">3</span></p>
+                        </div>
+                    </section>
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-add-course">Add</button>
                     </div>
                 </section>
-            </section>
-        </article>
+            </article>
+
+            <!-- Second semester default -->
+            <article class="semester">
+                <h1 class="semester-title">Semester Overview</h1>
+                <p contenteditable="true" class="semester-name">Fall 2019</p>
+                <!-- Courses section -->
+                <section class="courses">
+                    <h2 class="courses-title">Courses</h2>
+                    <!-- Course default -->
+                    <section class="course">
+                        <button class="btn btn-del-course"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        <div class="course-top-wrapper">
+                                <p class="course-title">CS101</p>
+                                <p class="course-score">Score: <span class="score">A</span></p>
+                                <p class="course-credits">Credits: <span class="credits">3</span></p>
+                        </div>
+                    </section>
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-add-course">Add</button>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Third semester default -->
+            <article class="semester">
+                    <h1 class="semester-title">Semester Overview</h1>
+                    <p contenteditable="true" class="semester-name">Fall 2019</p>
+                    <!-- Courses section -->
+                    <section class="courses">
+                        <h2 class="courses-title">Courses</h2>
+                        <!-- Course default -->
+                        <section class="course">
+                            <button class="btn btn-del-course"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <div class="course-top-wrapper">
+                                    <p class="course-title">CS101</p>
+                                    <p class="course-score">Score: <span class="score">A</span></p>
+                                    <p class="course-credits">Credits: <span class="credits">3</span></p>
+                            </div>
+                        </section>
+                        <div class="btn-container">
+                            <button type="button" class="btn btn-add-course">Add</button>
+                        </div>
+                    </section>
+            </article>
+
+        </div>
     </main>
 </body>
 </html>

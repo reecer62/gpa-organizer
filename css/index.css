@@ -15,4 +15,31 @@
     margin: 1.5em;
     padding: 0.75em;
     background-color: var(--semester-bg-color);
+    border-radius: 1.5em;
+}
+
+.course-top-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;   
+}
+
+.course-top-wrapper p:not(:first-child) {
+    margin-left: 1.5em;
+}
+
+/* Buttons */
+.btn-container {
+    text-align: center;
+}
+
+.btn-add-course {
+    display: inline-block;
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+    .semesters-container {
+        grid-template-columns: 1fr;
+    }
 }
