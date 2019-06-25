@@ -3,6 +3,7 @@
 /* CSS Variables */
 :root {
     --semester-bg-color: #e2e2e2;
+    --course-bg-color: #919191;
 }
 
 /* Semesters grid layout */
@@ -18,13 +19,17 @@
     border-radius: 1.5em;
 }
 
-.course-top-wrapper {
+.course {
+    background-color: var(--course-bg-color);
+}
+
+.course-bar {
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;   
 }
 
-.course-top-wrapper p:not(:first-child) {
+.course-bar p:not(:first-child) {
     margin-left: 1.5em;
 }
 
